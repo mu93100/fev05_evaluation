@@ -2,24 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px dotted blue;
+    /* border: 1px dotted blue; */
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
     font-variation-settings:"wdth" 100;
 }
 
 /* -------------------header------------------------ */
-header{ 
+body{
+    width: 100%;
 }
+
 .logo_header{
     background-color: #FAE5D1;
     text-align: center;
 }
 .logo{
-    height: 5em;
+    height: 7em;
     border-radius: 0.5em;
+    margin: 0.6em auto 0.4em auto;
 }
 .nav_header{
     display: flex;
@@ -29,46 +31,97 @@ header{
     background-color: #1E1E1E;
     border-radius: 0 0 0.5em 0.5em;
     color: #FAE5D1;
-    padding: 0.5rem 1rem;
+    padding: 1.2rem ;
+    font-size: 1.5em;
+    font-weight: 400;
 }
 /* -------------------main------------------------ */
 main{
     display: flex;
-    justify-content: space-around;
-    padding: 5rem;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    padding: 15%;
     width: 100%;
+    gap: 13%;
 }
-
 
 .card{
     background-color: #FAE5D1;
-    border: 3px dotted #AC7961;
-    border-radius: 20px;
-    padding: 1rem;
+    border: 5px dotted #AC7961;
+    border-radius: 28px;
+    padding: 1.4rem;
     width: 25%;
-    
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #1E1E1E;
+    margin-bottom: 12%;
+    box-shadow: 5px 3px 15px -1px #0000009a;
 }
+
+h2{
+    font-weight: normal;
+    font-size: 1.3em;
+    text-align: center;
+}
+h2 span{
+    font-weight: normal;
+    font-size: 0.6em;
+    margin-left: 1em;
+}
+
 .product_img1 img{
-    border-radius: 20px;
+    border-radius: 15px;
     width: 100%;
 }
-.product_info1 p{
-    font-size: medium;
+
+.product_p1{
+    font-size: 0.9em;
     font-weight: normal;
     font-style: italic;
+    margin: 1rem;
+    text-align: start;
 }
+
+.product_note1{
+    text-align: start;
+    color: #AC7961;
+    font-size: 1.4em;
+    padding-left: 01em;
+}
+
 .price1{
     background-color: #1E1E1E;
     color: #FAE5D1;
-    border-radius: 20px;
-    text-align: center;
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 1.1em;
+    padding: 0.8em 1em;
+    font-size: smaller;
 }
+.price1 i{
+    font-size: 2em;
+}
+
+.price_crossed{
+    text-decoration:line-through;
+    font-size:1.3em;
+}
+.price_new{
+    font-size: 1.8em;
+    margin: 0.4em;
+}
+
 /* -------------------footer------------------------ */
 footer{
     background-color: #AC7961;
-    color: #FAE5D1;
+    color: white;
     position: relative;
-    padding: 5rem;
+    padding: 6rem 6rem 1rem 6rem;
 }
 .container_footer{
     display: flex;
@@ -78,28 +131,99 @@ footer{
     position: absolute; top: -2.5rem;
     position-area: top center;
 }
+h4{
+    font-size: 1.5em;
+    font-weight:normal;
+}
 .nav_footer{
     padding: 1.5em 3em;
 }
 .nav_footer li{
-    margin: 1em 0;
+    margin: 0.7em 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-decoration: underline;
 }
 
 .container2 p{
     text-align: center;
+    font-size: 1.5em;
 }
 .networks{
     display: flex;
     justify-content: space-evenly;
-    margin: 5rem 0 ;
+    margin: 2rem 0 ;
+}
+.networks i{
+    color: white;
+    width: 90%;
+    margin-bottom: 10rem;
 }
 .container2 i{
     color: #FAE5D1;
     font-size: 2em;
 }
 
+@media screen and (max-width: 400px) {
+    .nav_header{
+        flex-direction: column;
+    }
+    
+    .nav_header li{
+        border-radius: 0;
+        text-align: center;
+    }
 
+    main{
+        flex-direction: column; 
+        align-items: center;
+        padding: 8rem 0 0 0 ;
+    }
 
-/* Beige : #FAE5D1 
- Marron : #AC7961 
- Gris foncé : #1E1E1E */
+    .card{
+        width: 93%;
+        min-width: 300px;       
+        gap: 1rem;
+        margin-bottom: 30%;
+    }
+    footer{
+        background-color: #AC7961;
+        color: white;
+        position: relative;
+        padding: 5%;
+        margin-top: 15%;
+    }
+    .container_footer{
+        margin: 30% 0 0 0;
+        flex-direction: column;
+    }
+    .logo_footer{
+        position: absolute; top: -2.5rem;
+        position-area: top center;
+    }
+    .nav_footer{
+        padding: 1.5em 2em auto 2.5em;
+    }
+    h4{
+        text-align: center;
+    } 
+    .nav_footer li{
+        margin: 0.7em 0 auto 0;
+        font-size: 1.4em;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    .container1{
+        margin-bottom: 5rem;
+    }
+    .logo_footer{
+        position: absolute; top: -4rem;
+    }
+    .networks{
+        text-align: center;
+    }
+    .container2 p{
+        font-size: 1.2em;
+    }
+}
+
