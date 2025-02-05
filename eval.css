@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dotted blue;
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:"wdth" 100;
+}
+
+/* -------------------header------------------------ */
+header{ 
+}
+.logo_header{
+    background-color: #FAE5D1;
+    text-align: center;
+}
+.logo{
+    height: 5em;
+    border-radius: 0.5em;
+}
+.nav_header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_header li{
+    background-color: #1E1E1E;
+    border-radius: 0 0 0.5em 0.5em;
+    color: #FAE5D1;
+    padding: 0.5rem 1rem;
+}
+/* -------------------main------------------------ */
+main{
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem;
+    width: 100%;
+}
+
+
+.card{
+    background-color: #FAE5D1;
+    border: 3px dotted #AC7961;
+    border-radius: 20px;
+    padding: 1rem;
+    width: 25%;
+    
+}
+.product_img1 img{
+    border-radius: 20px;
+    width: 100%;
+}
+.product_info1 p{
+    font-size: medium;
+    font-weight: normal;
+    font-style: italic;
+}
+.price1{
+    background-color: #1E1E1E;
+    color: #FAE5D1;
+    border-radius: 20px;
+    text-align: center;
+}
+/* -------------------footer------------------------ */
+footer{
+    background-color: #AC7961;
+    color: #FAE5D1;
+    position: relative;
+    padding: 5rem;
+}
+.container_footer{
+    display: flex;
+    justify-content: space-between;
+}
+.logo_footer{
+    position: absolute; top: -2.5rem;
+    position-area: top center;
+}
+.nav_footer{
+    padding: 1.5em 3em;
+}
+.nav_footer li{
+    margin: 1em 0;
+}
+
+.container2 p{
+    text-align: center;
+}
+.networks{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0 ;
+}
+.container2 i{
+    color: #FAE5D1;
+    font-size: 2em;
+}
+
+
+
+/* Beige : #FAE5D1 
+ Marron : #AC7961 
+ Gris foncé : #1E1E1E */
