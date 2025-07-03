@@ -1,12 +1,20 @@
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;    
     /* border: 1px dotted blue; */
-    font-family: "Roboto", serif;
+    /* font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal; */
+    font-family: "Gowun Dodum", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+
+    /* font-family: "Roboto", serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:"wdth" 100;
+    font-variation-settings:"wdth" 100; */
 }
 
 /* -------------------header------------------------ */
@@ -26,14 +34,16 @@ body{
 .nav_header{
     display: flex;
     justify-content: space-between;
+    padding: 0 2rem;
 }
 .nav_header li{
     background-color: #1E1E1E;
     border-radius: 0 0 0.5em 0.5em;
     color: #FAE5D1;
     padding: 1.2rem ;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 400;
+    list-style-type: none;
 }
 /* -------------------main------------------------ */
 main{
@@ -47,7 +57,7 @@ main{
 
 .card{
     background-color: #FAE5D1;
-    border: 5px dotted #AC7961;
+    border: 0.1rem dashed #AC7961;
     border-radius: 28px;
     padding: 1.4rem;
     width: 25%;
@@ -58,7 +68,7 @@ main{
     gap: 1rem;
     color: #1E1E1E;
     margin-bottom: 12%;
-    box-shadow: 5px 3px 15px -1px #0000009a;
+    box-shadow: 5px 3px 15px -1px #AC7961;
 }
 
 h2{
@@ -142,7 +152,7 @@ h4{
     margin: 0.7em 0;
     font-size: 1.5em;
     font-weight: 300;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .container2 p{
