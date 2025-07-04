@@ -3,18 +3,9 @@
     margin: 0;
     padding: 0;    
     /* border: 1px dotted blue; */
-    /* font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal; */
     font-family: "Gowun Dodum", sans-serif;
     font-weight: 400;
     letter-spacing: 0.1rem;
-
-    /* font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:"wdth" 100; */
 }
 
 /* -------------------header------------------------ */
@@ -42,37 +33,42 @@ body{
     color: #FAE5D1;
     padding: 1.2rem ;
     font-size: 1em;
-    font-weight: 400;
+    font-weight: bold;
     list-style-type: none;
+            box-shadow: 3px 1px 10px -0 #a07360;
+
 }
 /* -------------------main------------------------ */
 main{
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around; 
     flex-wrap: wrap; 
-    padding: 15%;
+    padding: 6rem 3rem 4rem 3rem;
     width: 100%;
     gap: 13%;
 }
 
 .card{
     background-color: #FAE5D1;
-    border: 0.1rem dashed #AC7961;
+    border: 0.1rem dashed #a07360;
     border-radius: 28px;
     padding: 1.4rem;
     width: 25%;
-    min-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    flex: 1 1 400px; /* Équivaut à : flex-grow: 1;
+                                    flex-shrink: 1;
+                                    flex-basis: 300px;*/
+    max-width: 450px;
+    gap: 1.2rem;
     color: #1E1E1E;
-    margin-bottom: 12%;
+    margin-bottom: 5rem;
     box-shadow: 5px 3px 15px -1px #AC7961;
 }
 
 h2{
-    font-weight: normal;
+    font-weight: 600;
     font-size: 1.3em;
     text-align: center;
 }
@@ -129,111 +125,196 @@ h2 span{
 /* -------------------footer------------------------ */
 footer{
     background-color: #AC7961;
-    color: white;
+    color: #1E1E1E;
+    font-size: 1em;
     position: relative;
-    padding: 6rem 6rem 1rem 6rem;
+    padding: 6rem 8rem 1.5rem 8em;
 }
 .container_footer{
     display: flex;
     justify-content: space-between;
+    text-align: start;
 }
 .logo_footer{
-    position: absolute; top: -2.5rem;
+    position: absolute; top: -2.7rem;
     position-area: top center;
 }
 h4{
-    font-size: 1.5em;
-    font-weight:normal;
+    font-size: 1.6em;
+    font-weight: bold;
 }
 .nav_footer{
-    padding: 1.5em 3em;
+    padding: 1.5em 0;
 }
 .nav_footer li{
     margin: 0.7em 0;
-    font-size: 1.5em;
-    font-weight: 300;
-    text-decoration: none;
+    font-size: 1em;
+    list-style-type: none;
+    text-align: start;
+    line-height: 1.3em;
 }
 
-.container2 p{
-    text-align: center;
-    font-size: 1.5em;
-}
 .networks{
     display: flex;
-    justify-content: space-evenly;
-    margin: 2rem 0 ;
-}
-.networks i{
-    color: white;
-    width: 90%;
-    margin-bottom: 10rem;
-}
-.container2 i{
-    color: #FAE5D1;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.2em 0 3.2em 0;
     font-size: 2em;
+    /* width: 90%; */
+}
+.container2 .copy_r{
+    font-size: 0.7em;
+    font-weight: bold;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
+    nav{
+        padding: 0 6%;
+    }
     .nav_header{
         flex-direction: column;
+        padding: .8rem ;
+        background-color: #1E1E1E;
+        border-radius: 0 0 28px 28px;
+        box-shadow: 5px 3px 15px -1px #AC7961;
     }
-    
     .nav_header li{
         border-radius: 0;
         text-align: center;
+        padding: 0.6rem ;
+        box-shadow: none;
     }
-
     main{
         flex-direction: column; 
         align-items: center;
-        padding: 8rem 0 0 0 ;
+        padding: 5rem 0 0 0 ;
     }
-
     .card{
-        width: 93%;
+        width: 85%;
         min-width: 300px;       
         gap: 1rem;
         margin-bottom: 30%;
     }
     footer{
-        background-color: #AC7961;
-        color: white;
-        position: relative;
-        padding: 5%;
-        margin-top: 15%;
+        padding: 8rem 2rem 2rem 2em;
     }
     .container_footer{
-        margin: 30% 0 0 0;
         flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
     }
-    .logo_footer{
-        position: absolute; top: -2.5rem;
-        position-area: top center;
+    .container1, .container2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .nav_footer{
-        padding: 1.5em 2em auto 2.5em;
+        padding: 1em 0;
     }
-    h4{
-        text-align: center;
-    } 
     .nav_footer li{
-        margin: 0.7em 0 auto 0;
-        font-size: 1.4em;
+        margin: 0.7em 0;
+        font-size: 1em;
         font-weight: 300;
-        text-decoration: underline;
-    }
-    .container1{
-        margin-bottom: 5rem;
-    }
-    .logo_footer{
-        position: absolute; top: -4rem;
+        list-style-type: none;
+        line-height: 1.3em;
+        text-align: center;
     }
     .networks{
-        text-align: center;
+        /* width: 70%; */
+        /* font-size: .6em; */
+        /* align-self: center; */
+        padding: 1em 0 ;
     }
-    .container2 p{
-        font-size: 1.2em;
+}
+/* *{
+            border: 1px dotted rgb(8, 136, 18);
+
+} */
+@media screen and (769px <= width <= 1024px){
+    footer{
+    padding: 6rem 0 1.5rem 0;
+    display: flex;
+    justify-content: center; /* centre container_footer horizontalement */
+    
+}
+    .container_footer{
+    justify-content: space-between;
+    gap: 10rem;
+}
+/*
+footer{
+    background-color: #AC7961;
+    color: #1E1E1E;
+    font-size: 1em;
+    position: relative;
+    padding: 6rem 8rem 1.5rem 8em;
+}
+.container_footer{
+.logo_footer{
+    position: absolute; top: -2.7rem;
+    position-area: top center;
+}
+h4{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.nav_footer{
+    padding: 1.5em 0;
+}
+.nav_footer li{
+    margin: 0.7em 0;
+    font-size: 1em;
+    list-style-type: none;
+    text-align: start;
+    line-height: 1.3em;
+}
+
+.networks{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.2em 3em 3.2em 0;
+    font-size: 2em;
+    /* width: 90%; 
+}
+
+.container2 .copy_r{
+    font-size: 0.7em;
+    font-weight: bold;
+} */
+}
+@media screen and (min-width: 1700px) {
+    main{
+        padding: 6rem 10rem 4rem 10rem; 
     }
 }
 
+/* main{
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+
+    width: 100%;
+    gap: 13%;
+} */
+
+/* .card{
+    background-color: #FAE5D1;
+    border: 0.1rem dashed #a07360;
+    border-radius: 28px;
+    padding: 1.4rem;
+    width: 25%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 400px; /* Équivaut à : flex-grow: 1;
+                                    flex-shrink: 1;
+                                    flex-basis: 300px;
+    max-width: 500px;
+    gap: 1.2rem;
+    color: #1E1E1E;
+    margin-bottom: 12%;
+    box-shadow: 5px 3px 15px -1px #AC7961;
+} */
