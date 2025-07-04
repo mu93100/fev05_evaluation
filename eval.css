@@ -227,10 +227,7 @@ h4{
         padding: 1em 0 ;
     }
 }
-/* *{
-            border: 1px dotted rgb(8, 136, 18);
 
-} */
 @media screen and (769px <= width <= 1024px){
     footer{
     padding: 6rem 0 1.5rem 0;
@@ -242,79 +239,3 @@ h4{
     justify-content: space-between;
     gap: 10rem;
 }
-/*
-footer{
-    background-color: #AC7961;
-    color: #1E1E1E;
-    font-size: 1em;
-    position: relative;
-    padding: 6rem 8rem 1.5rem 8em;
-}
-.container_footer{
-.logo_footer{
-    position: absolute; top: -2.7rem;
-    position-area: top center;
-}
-h4{
-    font-size: 1.6em;
-    font-weight: bold;
-}
-.nav_footer{
-    padding: 1.5em 0;
-}
-.nav_footer li{
-    margin: 0.7em 0;
-    font-size: 1em;
-    list-style-type: none;
-    text-align: start;
-    line-height: 1.3em;
-}
-
-.networks{
-    display: flex;
-    justify-content: space-between;
-    gap: 1.5rem;
-    padding: 1.2em 3em 3.2em 0;
-    font-size: 2em;
-    /* width: 90%; 
-}
-
-.container2 .copy_r{
-    font-size: 0.7em;
-    font-weight: bold;
-} */
-}
-@media screen and (min-width: 1700px) {
-    main{
-        padding: 6rem 10rem 4rem 10rem; 
-    }
-}
-
-/* main{
-    display: flex;
-    justify-content: space-around; 
-    flex-wrap: wrap; 
-
-    width: 100%;
-    gap: 13%;
-} */
-
-/* .card{
-    background-color: #FAE5D1;
-    border: 0.1rem dashed #a07360;
-    border-radius: 28px;
-    padding: 1.4rem;
-    width: 25%;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 400px; /* Équivaut à : flex-grow: 1;
-                                    flex-shrink: 1;
-                                    flex-basis: 300px;
-    max-width: 500px;
-    gap: 1.2rem;
-    color: #1E1E1E;
-    margin-bottom: 12%;
-    box-shadow: 5px 3px 15px -1px #AC7961;
-} */
