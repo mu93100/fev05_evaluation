@@ -82,12 +82,12 @@ h2 span{
     margin-left: 1em;
 }
 
-.product_img1 img{
+.product_img img{
     border-radius: 15px;
     width: 100%;
 }
 
-.product_p1{
+.product_p{
     font-size: 0.9rem;
     font-weight: normal;
     font-style: italic;
@@ -95,14 +95,14 @@ h2 span{
     text-align: start;
 }
 
-.product_note1{
+.product_note{
     text-align: start;
     color: #AC7961;
     font-size: 1.4em;
     padding-left: 01em;
 }
 
-.price1{
+.price{
     background-color: #1E1E1E;
     color: #FAE5D1;
     border-radius: 5em;
@@ -114,7 +114,7 @@ h2 span{
     font-size: smaller;
 }
 
-.price1 i{
+.price i{
     font-size: 2em;
 }
 
@@ -208,13 +208,26 @@ h4{
     main{
         flex-direction: column; 
         align-items: center;
-        padding: 5rem 0 0 0 ;
+        padding: 5rem 0 2.1rem 0 ;
     }
+
     .card{
         width: 75%;
-        min-width: 300px;       
         gap: 1rem;
-        margin-bottom: 30%;
+        margin-bottom: 5rem;
+    }
+
+    .price{
+        gap: 1em;
+    }
+        
+    .price_crossed{
+        font-size:1.1em;
+    }
+    
+    .price_new{
+        font-size: 1.7em;
+        margin: 0.25em;
     }
 
     footer{
@@ -224,7 +237,7 @@ h4{
     .container_footer{
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .container1, .container2{
@@ -248,9 +261,6 @@ h4{
     }
 
     .networks{
-        /* width: 70%; */
-        /* font-size: .6em; */
-        /* align-self: center; */
         padding: 1em 0 ;
     }
 }
@@ -269,15 +279,44 @@ h4{
         gap: 1rem;
     }
     
+    h2{
+        font-size: 1.2em;
+    }
+    
+    .product_p{
+        font-size: 0.85rem;
+        margin: 0.5rem;
+    }
+
+    .price{
+        border-radius: 5em;
+        gap: 1.1em;
+        padding: 0.8em;
+    }
+
+    .price i{
+        font-size: 2em;
+    }
+
+    .price_crossed{
+        text-decoration:line-through;
+        font-size:1.2em;
+    }
+
+    .price_new{
+        font-size: 1.7em;
+        margin: 0.4em;
+    }
+
     footer{
-    padding: 6rem 0 1.5rem 0;
-    display: flex;
-    justify-content: center; /* centre container_footer horizontalement */
+        padding: 6rem 0 1.5rem 0;
+        display: flex;
+        justify-content: center; 
     }
 
     .container_footer{
-    justify-content: space-between;
-    gap: 10rem;
+        justify-content: space-between;
+        gap: 10rem;
     }
     .copy_r{
         font-size: 0.6em;
