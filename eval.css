@@ -17,16 +17,19 @@ body{
     background-color: #FAE5D1;
     text-align: center;
 }
+
 .logo{
     height: 7em;
     border-radius: 0.5em;
     margin: 0.6em auto 0.4em auto;
 }
+
 .nav_header{
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
 }
+
 .nav_header li{
     background-color: #1E1E1E;
     border-radius: 0 0 0.5em 0.5em;
@@ -52,7 +55,7 @@ main{
     background-color: #FAE5D1;
     border: 0.1rem dashed #a07360;
     border-radius: 28px;
-    padding: 1.4rem;
+    padding: 2rem;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -72,6 +75,7 @@ h2{
     font-size: 1.3em;
     text-align: center;
 }
+
 h2 span{
     font-weight: normal;
     font-size: 0.6em;
@@ -84,7 +88,7 @@ h2 span{
 }
 
 .product_p1{
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: normal;
     font-style: italic;
     margin: 1rem;
@@ -109,6 +113,7 @@ h2 span{
     padding: 0.8em 1em;
     font-size: smaller;
 }
+
 .price1 i{
     font-size: 2em;
 }
@@ -117,6 +122,7 @@ h2 span{
     text-decoration:line-through;
     font-size:1.3em;
 }
+
 .price_new{
     font-size: 1.8em;
     margin: 0.4em;
@@ -128,49 +134,62 @@ footer{
     color: #1E1E1E;
     font-size: 1em;
     position: relative;
-    padding: 6rem 8rem 1.5rem 8em;
+    padding: 5rem 8rem 1.5rem 8em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
 .container_footer{
     display: flex;
     justify-content: space-between;
     text-align: start;
+    margin: auto 2rem;
 }
+
 .logo_footer{
-    position: absolute; top: -2.7rem;
-    position-area: top center;
+    position: absolute; 
+    top: -2.7rem;
+    align-self: center;
 }
+
 h4{
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: bold;
 }
+
 .nav_footer{
-    padding: 1.5em 0;
+    padding: 0.1em 0;
 }
+
 .nav_footer li{
     margin: 0.7em 0;
-    font-size: 1em;
+    font-size: 0.9em;
     list-style-type: none;
     text-align: start;
-    line-height: 1.3em;
+    line-height: 1.2em;
 }
 
 .networks{
     display: flex;
     justify-content: space-between;
     gap: 1.5rem;
-    padding: 1.2em 0 3.2em 0;
+    padding: 0.5em 0 2.4em 0;
     font-size: 2em;
     /* width: 90%; */
 }
-.container2 .copy_r{
+
+.copy_r{
     font-size: 0.7em;
     font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {
     nav{
-        padding: 0 6%;
+        padding: 0 10%;
     }
+
     .nav_header{
         flex-direction: column;
         padding: .8rem ;
@@ -178,40 +197,47 @@ h4{
         border-radius: 0 0 28px 28px;
         box-shadow: 5px 3px 15px -1px #AC7961;
     }
+
     .nav_header li{
         border-radius: 0;
         text-align: center;
-        padding: 0.6rem ;
+        padding: 0.5rem ;
         box-shadow: none;
     }
+
     main{
         flex-direction: column; 
         align-items: center;
         padding: 5rem 0 0 0 ;
     }
     .card{
-        width: 85%;
+        width: 75%;
         min-width: 300px;       
         gap: 1rem;
         margin-bottom: 30%;
     }
+
     footer{
         padding: 8rem 2rem 2rem 2em;
     }
+
     .container_footer{
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
+
     .container1, .container2{
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .nav_footer{
         padding: 1em 0;
     }
+
     .nav_footer li{
         margin: 0.7em 0;
         font-size: 1em;
@@ -220,6 +246,7 @@ h4{
         line-height: 1.3em;
         text-align: center;
     }
+
     .networks{
         /* width: 70%; */
         /* font-size: .6em; */
@@ -229,13 +256,31 @@ h4{
 }
 
 @media screen and (769px <= width <= 1024px){
+    main{
+        padding: 6rem 1.5rem 4rem 1.5rem;
+        width: 100%;
+        gap: 2%;
+    }
+    
+    .card{
+        padding: 1.5rem;
+        width: 17%;
+        max-width: 330px;
+        gap: 1rem;
+    }
+    
     footer{
     padding: 6rem 0 1.5rem 0;
     display: flex;
     justify-content: center; /* centre container_footer horizontalement */
-    
-}
+    }
+
     .container_footer{
     justify-content: space-between;
     gap: 10rem;
+    }
+    .copy_r{
+        font-size: 0.6em;
+        font-weight: bold;
+    }
 }
